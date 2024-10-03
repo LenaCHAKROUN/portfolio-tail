@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+  rel="stylesheet" />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/tw-elements/css/tw-elements.min.css" />
+<script src="https://cdn.tailwindcss.com/3.3.0"></script>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      fontFamily: {
+        sans: ["Roboto", "sans-serif"],
+        body: ["Roboto", "sans-serif"],
+        mono: ["ui-monospace", "monospace"],
+      },
+    },
+    corePlugins: {
+      preflight: false,
+    },
+  };
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<body>
+    <header>
+        <!--NAVBAR-->
+        <!-- Main navigation container -->
+        <nav>
+          <!-- Main navigation container -->
+<nav
+class="flex-no-wrap relative flex w-full items-center justify-between bg-zinc-50 py-2 shadow-dark-mild dark:bg-neutral-700 lg:flex-wrap lg:justify-start lg:py-4">
+<div class="flex w-full flex-wrap items-center justify-between px-3">
+  <!-- Hamburger button for mobile view -->
+  <button
+    class="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+    type="button"
+    data-twe-collapse-init
+    data-twe-target="#navbarSupportedContent1"
+    aria-controls="navbarSupportedContent1"
+    aria-expanded="false"
+    aria-label="Toggle navigation">
+    <!-- Hamburger icon -->
+    <span
+      class="[&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor">
+        <path
+          fill-rule="evenodd"
+          d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+          clip-rule="evenodd" />
+      </svg>
+    </span>
+  </button>
+
+  <!-- Collapsible navigation container -->
+  <div
+    class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
+    id="navbarSupportedContent1"
+    data-twe-collapse-item>
+    <!-- Logo -->
+    <a
+      class="mb-4 me-5 ms-2 mt-3 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:mb-0 lg:mt-0"
+      href="#">
+      <img
+        src="https://tecdn.b-cdn.net/img/logo/te-transparent-noshadows.webp"
+        style="height: 15px"
+        alt="TE Logo"
+        loading="lazy" />
+    </a>
+    <!-- Left navigation links -->
+    <ul
+      class="list-style-none me-auto flex flex-col ps-0 lg:flex-row"
+      data-twe-navbar-nav-ref>
+      <li class="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
+        <!-- Dashboard link -->
+        <a
+          class="text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+          href="#part1"
+          data-twe-nav-link-ref
+          >Home</a
+        >
+      </li>
+      <!-- Team link -->
+      <li class="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
+        <a
+          class="text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+          href="#contact"
+          data-twe-nav-link-ref
+          >Contact</a
+        >
+      </li>
+      <!-- Projects link -->
+      <li class="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
+        <a
+          class="text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+          href="#part2"
+          data-twe-nav-link-ref
+          >Projects</a
+        >
+      </li>
+    </ul>
+    <!-- Left links -->
+  </div>
+
+  <!-- Right elements -->
+  <div class="relative flex items-center">
+    <!-- Icon -->
+    <a class="me-4 text-neutral-600 dark:text-white" href="#">
+      <span class="[&>svg]:w-5">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor">
+          <path
+            d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+        </svg>
+      </span>
+    </a>
+
+    <!-- First dropdown container -->
+    <div
+      class="relative"
+      data-twe-dropdown-ref
+      data-twe-dropdown-alignment="end">
+      <!-- First dropdown trigger -->
+      <a
+        class="me-4 flex items-center text-neutral-600 dark:text-white"
+        href="#"
+        id="dropdownMenuButton1"
+        role="button"
+        data-twe-dropdown-toggle-ref
+        aria-expanded="false">
+        <!-- Dropdown trigger icon -->
+        <span class="[&>svg]:w-5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor">
+            <path
+              fill-rule="evenodd"
+              d="M5.25 9a6.75 6.75 0 0113.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 01-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 11-7.48 0 24.585 24.585 0 01-4.831-1.244.75.75 0 01-.298-1.205A8.217 8.217 0 005.25 9.75V9zm4.502 8.9a2.25 2.25 0 104.496 0 25.057 25.057 0 01-4.496 0z"
+              clip-rule="evenodd" />
+          </svg>
+        </span>
+        <!-- Notification counter -->
+        <span
+          class="absolute -mt-4 ms-2.5 rounded-full bg-danger px-[0.35em] py-[0.15em] text-[0.6rem] font-bold leading-none text-white"
+          >1</span
+        >
+      </a>
+      <!-- First dropdown menu -->
+      <ul
+        class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg data-[twe-dropdown-show]:block dark:bg-surface-dark"
+        aria-labelledby="dropdownMenuButton1"
+        data-twe-dropdown-menu-ref>
+        <!-- First dropdown menu items -->
+        <li>
+          <a
+            class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+            href="#contact"
+            data-twe-dropdown-item-ref
+            >Action</a
+          >
+        </li>
+        <li>
+          <a
+            class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+            href="#contact"
+            data-twe-dropdown-item-ref
+            >Another action</a
+          >
+        </li>
+        <li>
+          <a
+            class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+            href="#"
+            data-twe-dropdown-item-ref
+            >Something else here</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- Second dropdown container -->
+    <div
+      class="relative"
+      data-twe-dropdown-ref
+      data-twe-dropdown-alignment="end">
+      <!-- Second dropdown trigger -->
+      <a
+        class="flex items-center whitespace-nowrap transition duration-150 ease-in-out motion-reduce:transition-none"
+        href="#part1"
+        id="dropdownMenuButton2"
+        role="button"
+        data-twe-dropdown-toggle-ref
+        aria-expanded="false">
+        <!-- User avatar -->
+        <img
+          src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="rounded-full"
+          style="height: 25px; width: 25px"
+          alt=""
+          loading="lazy" />
+      </a>
+      <!-- Second dropdown menu -->
+      <ul
+        class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg data-[twe-dropdown-show]:block dark:bg-surface-dark"
+        aria-labelledby="dropdownMenuButton2"
+        data-twe-dropdown-menu-ref>
+        <!-- Second dropdown menu items -->
+        <li>
+          <a
+            class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+            href="#part2"
+            data-twe-dropdown-item-ref
+            >Action</a
+          >
+        </li>
+        <li>
+          <a
+            class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+            href="#part2"
+            data-twe-dropdown-item-ref
+            >Another action</a
+          >
+        </li>
+        <li>
+          <a
+            class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+            href="#part2"
+            data-twe-dropdown-item-ref
+            >Something else here</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- Right elements -->
+</div>
+</nav>
+        </nav>
+        <!--FIN HEADER-->
+            <!-- Hero section with background image, heading, subheading and button -->
+            <div
+              class="relative h-[350px] overflow-hidden bg-[url('https://images.unsplash.com/photo-1512600298284-65c983e77c2c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-[50%] bg-no-repeat">
+              <div
+                class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black/60 bg-fixed">
+                <div class="flex h-full items-center justify-center">
+                  <div class="px-6 text-center text-white md:px-12">
+                    <h1 class="mb-6 text-5xl font-bold">Isabella Romano</h1>
+                    <h3 class="mb-8 text-1xl font-bold">Artist, Photographer, Human</h3>
+                    <button
+                      
+                      type="button"
+                      class="inline-block rounded border-2 border-neutral-50 px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-300 hover:text-neutral-200 focus:border-neutral-300 focus:text-neutral-200 focus:outline-none focus:ring-0 active:border-neutral-300 active:text-neutral-200 dark:hover:bg-neutral-600 dark:focus:bg-neutral-600"
+                      data-twe-ripple-init
+                      data-twe-ripple-color="light">
+                      Learn About Me
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+    </header>
+    <main >
+        <!--ABOUT ME-->
+        <br>
+        <h1 class="title">ABOUT ME</h1>
+        <br>
+        <section id="part1" style="background-color: rgba(210, 210, 210, 0.685);">
+            <img class=" moim" src="https://i.pinimg.com/564x/46/91/7e/46917e87e8efdf068e0f9e1035a4fcb4.jpg" alt="me" width="400px">
+            <p class="moi">La photographie est bien plus qu'un simple métier pour moi ; c'est une passion qui me permet de capturer des instants authentiques et des émotions sincères. Chaque projet est une nouvelle aventure, et je m'engage à comprendre les désirs et les besoins de mes clients pour créer des images qui leur ressemblent. Mon dévouement à leur satisfaction est essentiel, car je veux qu'ils se sentent à l'aise et confiants devant l'objectif. Je porte une attention particulière à chaque détail, depuis la préparation jusqu'à la retouche, car je crois que chaque client mérite une expérience unique et mémorable. En fin de compte, ma plus grande récompense est de voir la joie dans leurs yeux en découvrant les souvenirs que j'ai su immortaliser pour eux.</p>
+        </section>
+        <br>
+        <h1 class="title">MY WORK</h1>
+        <h2 class="st">Nos Catégories</h2>
+        <section id="part2">
+          <div class="card-group">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1439539698758-ba2680ecadb9?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Fêtes</h5>
+                <p class="card-text">Grâce à une maîtrise technique et artistique, je capture chaque instant avec précision, en mettant l'accent sur les détails, les émotions et les jeux de lumière pour créer des images intemporelles et authentiques.</p>
+                
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Evenements</h5>
+                <p class="card-text">Je mets mon expertise à votre service pour immortaliser chaque moment important de vos événements, en créant des images élégantes, naturelles et remplies d'émotion.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1511109918392-06b364875b26?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Shooting Privé</h5>
+                <p class="card-text">Je vous propose des shootings privés sur mesure, où chaque détail est soigné pour capturer des images authentiques, intimes et pleines de personnalité.</p>
+                
+              </div>
+            </div>
+          </div>
+        </section>
+        <br>
+        <h1 class="title">MY LOCATION</h1>
+        <br>
+        <section class="loca">
+          <img class="place" src="https://www.bing.com/maps/geoplat/REST/v1/Imagery/Map/RoadVibrant/40.780746,-73.968517/11?ms=1182,629&heid=5487505287306805249,707070&fpp=40.78074645996094,-73.9685173034668;178&ml=Basemap,LandCover,Landmarks,OsmBuildings&key=AnTcaqBi2ypp0xI-OZNi4W_ik2KhjgpqioTAtXLC8GzkMBQRMlyxvxyTnd5b73im&c=fr-FR&dpi=Large&fmt=jpeg&od=1&shading=hill&logo=n&da=ro" alt="" width=""600px>
+        </section>
+
+
+        
+    </main>
+    <footer>
+
+    </footer>
+    <script
+    type="text/javascript"
+    src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+<footer style="background-color: rgba(210, 210, 210, 0.685);">
+  <section id="contact";>
+    <br>
+    <p >E-Mail: isabellaromano@gmail.com</p>
+    <p>Phone Number: +44 4785478848578</p>
+    <p>Instagram: Isa_Bellaa</p>
+    <p> All Rights Preserved 2024 © </p>
+    <br>
+  </section>
+  
+  
+</footer>
+</html>
